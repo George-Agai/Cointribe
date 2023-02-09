@@ -1,0 +1,386 @@
+body {
+  background: #f1f1f1 !important;
+}
+
+@media (min-width: 1200px) {
+  .form-input-card {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+#home-main-container {
+  border: none;
+  height: 95vh;
+}
+
+.container {
+  margin-top: 55px !important;
+}
+
+.btn-secondary {
+  background-color: #28986b !important;
+  border-color: #28986b !important;
+  width: 200px;
+  height: 50px;
+}
+
+section {
+  padding-bottom: 20px;
+}
+
+.logo-dark {
+  width: 141px;
+}
+
+.cypto-icons {
+  width: 75px;
+}
+
+.feature-serial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  padding: 40px;
+  height: calc(100% - 30px);
+}
+
+.cover_image {
+  width: 450px;
+  height: 450px;
+}
+
+.cover_image_right {
+  width: 450px;
+  height: 310px;
+}
+
+.icon-currency-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-currency-list li {
+  list-style: none;
+}
+
+.nk-block {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+#description-flex-container {
+  display: flex;
+  width: max-content;
+}
+
+#cointribe-description {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding-left: 100px;
+  padding-right: 150px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.home-image-container {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+#cointribe-description h2 {
+  font-weight: 700;
+  font-size: 65px;
+  margin-bottom: 25px;
+  text-align: left;
+  margin-top: -30px;
+}
+
+#cointribe-description p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+#home-page-row-container {
+  display: flex;
+  width: 95vw;
+  margin-left: -100px;
+}
+
+.login-sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  font-size: 13px;
+  background-color: #007aff;
+  border-color: #007aff !important;
+  width: 90px;
+  height: 38px;
+  color: white;
+  font-weight: 600;
+}
+
+.login-sign-up-btn:hover {
+  background-color: #28986b;
+  color: white;
+  transition: 0.4s;
+}
+
+.sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  font-size: 13px;
+  width: 80px;
+  height: 38px;
+  color: #007aff;
+  border: 2px solid #007aff;
+  font-weight: 600;
+}
+
+.sign-up-btn:hover {
+  border: 2px solid #28986b;
+  color: #28986b;
+  transition: 0.4s;
+}
+
+.purchase-now-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #007aff;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.purchase-now-button:hover {
+  box-shadow: 2px 2px 6px 0 rgb(177, 174, 174);
+  background-color: #3b77b7;
+  transition: 0.2s;
+  color: white;
+}
+
+.home-page-image {
+  margin-left: 40px;
+  width: 370px;
+  height: 480px;
+  animation: homePageImage 2s ease-in-out infinite;
+}
+
+@keyframes homePageImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#blob-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+}
+
+.cryptocurrency-image {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 150px;
+  margin-left: -80px;
+}
+
+.bitcoin-image {
+  width: 50px;
+  height: 50px;
+}
+
+#cointribe-buysell {
+  background-color: white;
+  margin-top: -30px;
+  padding-top: 10px;
+}
+
+#cointribe-buysell .row {
+  display: flex;
+  justify-content: center;
+}
+
+#buy-sell-second-container p {
+  font-size: 18px;
+}
+#cointribe-mobile-wallet h4{
+  font-weight: 500;
+  font-size: 26px;
+}
+#buy-sell-second-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#cointribe-mobile-wallet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 95vh;
+  margin-bottom: 30px;
+}
+#cointribe-mobile-wallet  p{
+  font-size: 18px;
+}
+#cointribe-fourth-row {
+  background-color: white;
+  padding-top: 30px;
+  border: 1px solid white;
+  height: 97vh;
+}
+
+#buy-sell-second-container a {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.crypto-woman {
+  width: 450px;
+  height: 380px;
+}
+
+#list li {
+  display: flex;
+  align-items: center;
+}
+#buy-sell-second-container h4{
+  font-weight: 500;
+  font-size: 26px;
+}
+#buy-sell-second-container li{
+  margin-bottom: 20px;
+}
+.list-numbering {
+  width: 60px;
+  height: 60px;
+  margin-right: 6px;
+}
+
+#heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+.get-started-row{
+  display: flex;
+  height: 65vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+}
+.get-started-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+.get-started-now-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gsn-button{
+  margin-top: -90px;
+  width: 200px;
+}
+#know-more-row{
+  height: 70vh;
+}
+#know-more-row p{
+  font-size: 15px;
+}
+#know-more-row h5{
+  font-weight: 600;
+  font-size: 22px;
+}
+#know-more-row a{
+  color: #007aff;
+}
+.feature-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.feature-text h5{
+  font-weight: 600;
+  font-size: 22px;
+}

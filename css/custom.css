@@ -61,8 +61,8 @@ section {
 }
 
 .cover_image_right {
-  width: 450px;
-  height: 310px;
+  min-width: 450px;
+  min-height: 310px;
 }
 
 .icon-currency-list {
@@ -93,7 +93,9 @@ section {
   text-align: center;
   text-decoration: none;
 }
-
+#getting-started{
+  height: min-content;
+}
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
@@ -108,18 +110,53 @@ section {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .header a {
     float: none;
-    display: block;
-    text-align: left;
+    display: flex;
   }
 
   .header-right {
-    float: none;
+    display: flex;
+    float: right;
+    margin-left: 35px;
+  }
+
+  .home-image-container .home-page-image, #blob-container{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+  }
+  
+  #home-main-container, #cointribe-buysell{
+    margin-bottom: 60px;
+    width: 100%;
+    height: min-content;
+  }
+  #home-main-container .container #home-page-row-flex-container #home-page-row-container #description-flex-container{
+    width: 100%;
+  }
+  #cover_image_right_div{
+    width: 10px;
+    height: 10px;
   }
 }
-
+.cover_image_right_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #description-flex-container {
   display: flex;
   width: max-content;
@@ -167,8 +204,8 @@ section {
   align-items: center;
   border-radius: 27px;
   font-size: 13px;
-  background-color: #007aff;
-  border-color: #007aff !important;
+  background-color: #28986b;
+  border-color: #28986b !important;
   width: 90px;
   height: 38px;
   color: white;
@@ -189,8 +226,8 @@ section {
   font-size: 13px;
   width: 80px;
   height: 38px;
-  color: #007aff;
-  border: 2px solid #007aff;
+  color: #28986b;
+  border: 2px solid #28986b;
   font-weight: 600;
 }
 
@@ -205,7 +242,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
-  background-color: #007aff;
+  background-color: #28986b;
   width: 180px;
   height: 50px;
   border-radius: 50px;
@@ -293,7 +330,7 @@ section {
   justify-content: center;
   align-items: center;
   border: none;
-  height: 95vh;
+  height: min-content;
   margin-bottom: 30px;
 }
 #cointribe-mobile-wallet  p{
@@ -302,8 +339,9 @@ section {
 #cointribe-fourth-row {
   background-color: white;
   padding-top: 30px;
+  padding-bottom: 60px;
   border: 1px solid white;
-  height: 97vh;
+  height: min-content;
 }
 
 #buy-sell-second-container a {
@@ -362,7 +400,7 @@ section {
   width: 200px;
 }
 #know-more-row{
-  height: 70vh;
+  height: min-content;
 }
 #know-more-row p{
   font-size: 15px;
@@ -372,7 +410,7 @@ section {
   font-size: 22px;
 }
 #know-more-row a{
-  color: #007aff;
+  color: #28986b;
 }
 .feature-text{
   display: flex;

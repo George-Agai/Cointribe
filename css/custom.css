@@ -66,7 +66,7 @@ section {
 }
 @media (max-width: 600px){
   #third_cover_image_div{
-    padding: 10px;
+    padding: 20px;
     margin-top: -70px;
   }
 }
@@ -123,18 +123,22 @@ section {
 @media screen and (max-width: 600px) {
   .header{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
   }
   .header a {
     float: none;
+    width: 60px;
+    height: 35px;
     display: flex;
   }
 
   .header-right {
     display: flex;
     float: right;
-    margin-left: 35px;
+    margin-left: 30px;
+    justify-content: space-between;
   }
 
   .home-image-container .home-page-image, #blob-container{
@@ -170,17 +174,44 @@ section {
 
 #description-flex-container {
   display: flex;
-  width: max-content;
+  min-width: 100vw;
 }
-
+#blob-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 250px;
+  height: 300px;
+  margin-left: 70px;
+}
 #cointribe-description {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  padding-left: 100px;
+  max-width: 45%;
+  padding-left: 80px;
   padding-right: 150px;
   text-align: left;
   margin-top: 30px;
+  
+}
+@media (max-width: 600px){
+  #home-main-container #cointribe-description{
+    min-width: 108vw;
+    height: min-content;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .home-image-container #blob-container {
+    margin-left: -50px;
+    margin-top: -90px;
+  }
+  #cointribe-description .title{
+    font-size: 50px;
+  }
+  .main #description-flex-container{
+    min-width: 100%;
+  }
 }
 
 .home-image-container {
@@ -238,7 +269,7 @@ section {
   width: 80px;
   height: 38px;
   color: #28986b;
-  border: 2px solid #28986b;
+  border: 1.3px solid #28986b;
   font-weight: 600;
 }
 
@@ -291,14 +322,6 @@ section {
   }
 }
 
-#blob-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 250px;
-  height: 300px;
-}
 
 .cryptocurrency-image {
   width: 90px;
@@ -372,10 +395,29 @@ section {
 }
 @media (max-width: 600px){
   #crypto-woman-div{
-    padding: 10px;
+    padding: 20px;
     margin-top: -50px;
   }
+  #buy-sell-second-container ul{
+    margin-top: -40px;
+  }
+  #buy-sell-second-container ul h4{
+    font-size: 24px;
+  }
+  #buy-sell-second-container ul p{
+    font-size: 17px;
+  }
+  #cointribe-mobile-resp ul{
+    margin-top: -40px;
+  }
+  #cointribe-mobile-resp ul h4{
+    font-size: 24px;
+  }
+  #cointribe-mobile-resp ul p{
+    font-size: 17px;
+  }
 }
+
 
 #list li {
   display: flex;
@@ -409,8 +451,43 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 25px;
-  padding-right: 20px;
+  border: 0.5px solid rgb(233, 229, 229);
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 2px 2px 6px 0 rgb(234, 233, 233);
+}
+
+@media (max-width: 600px){
+.get-started-row{
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: flex-start;
+}
+.get-started-div{
+  margin-bottom: 15px;
+}
+.feature{
+  display: flex;
+}
+#heading{
+  font-size: 34px;
+}
+.feature-text .title{
+  font-size: 19px;
+}
+.feature-text .title, .mx-auto{
+  text-align: left;
+}
+.feature-serial{
+  margin-right: 10px;
+}
+#sign-up{
+  text-align: start;
+}
 }
 
 .get-started-now-container{
@@ -441,7 +518,41 @@ section {
   align-items: center;
   text-align: center;
 }
+.feature-text #image-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-text #image-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .feature-text h5{
   font-weight: 600;
   font-size: 22px;
+}
+@media (max-width: 600px){
+  .section-head #heading{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .row .feature{
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  #why-cointribe-div p{
+    font-size: 18px;
+  }
+  #why-cointribe-div .list li{
+    font-size: 18px;
+  }
+  #why-cointribe-div .list{
+    margin-top: -30px;
+  }
+  #why-cointribe-div .pb-5{
+    margin-top: -20px;
+  }
 }

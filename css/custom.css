@@ -56,13 +56,23 @@ section {
 }
 
 .cover_image {
-  width: 450px;
-  height: 450px;
+  max-width: 100%;
+  height: auto;
 }
-
+#third_cover_image_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px){
+  #third_cover_image_div{
+    padding: 10px;
+    margin-top: -70px;
+  }
+}
 .cover_image_right {
-  min-width: 450px;
-  min-height: 310px;
+  max-width: 100%;
+  height: auto;
 }
 
 .icon-currency-list {
@@ -144,19 +154,20 @@ section {
     width: 100%;
     height: min-content;
   }
-  #home-main-container .container #home-page-row-flex-container #home-page-row-container #description-flex-container{
-    width: 100%;
-  }
-  #cover_image_right_div{
-    width: 10px;
-    height: 10px;
-  }
 }
 .cover_image_right_div{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 600px){
+  .cover_image_right_div{
+    padding: 10px;
+    margin-top: -70px;
+  }
+}
+
 #description-flex-container {
   display: flex;
   width: max-content;
@@ -350,9 +361,20 @@ section {
   width: 150px;
 }
 
-.crypto-woman {
-  width: 450px;
-  height: 380px;
+.crypto-woman { 
+  max-width: 100%;
+  height: auto;
+}
+#crypto-woman-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px){
+  #crypto-woman-div{
+    padding: 10px;
+    margin-top: -50px;
+  }
 }
 
 #list li {
@@ -378,7 +400,7 @@ section {
 }
 .get-started-row{
   display: flex;
-  height: 65vh;
+  min-height: 65vh;
   align-items: center;
   justify-content: center;
   margin-top: -70px;
@@ -390,6 +412,7 @@ section {
   padding-left: 25px;
   padding-right: 20px;
 }
+
 .get-started-now-container{
   display: flex;
   flex-direction: column;

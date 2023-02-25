@@ -21,19 +21,30 @@
 
 <body class="nk-body mode-onepage" id="body">
     <div class="main-body">
-        <div class="container" style="margin-top: 1px !important;">
+        <div class="container" style="margin-top: 1px !important;" id="home">
             <div class="header">
                 <a href="/" class="logo">
                     <img class="logo-dark" src="images/logo.svg" srcset="images/logo.svg 2x" alt="logo">
                 </a>
-                <div class="header-right">
-                    <a href="/register" class="sign-up-btn">
-                        Sign Up
-                    </a>
-                    <a href="/login" class="login-sign-up-btn">
-                        Login
-                    </a>
-
+                <div class="header-flex-container">
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="nav-link scrollto" href="">Home</a></li>
+                            <li class="dropdown"><a href="about.html"><span>About</span> <i
+                                        class="bi bi-chevron-down"></i></a>
+                            <li><a class="nav-link scrollto" href="careers.html">Careers</a></li>
+                            <li><a class="nav-link scrollto" href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav>
+                    <div class="header-right">
+                        <a href="/register" class="sign-up-btn">
+                            Sign Up
+                        </a>
+                        <a href="/login" class="login-sign-up-btn">
+                            Login
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,17 +56,16 @@
                         <div class="row" id="home-page-row-container">
                             <div class="col-lg-10 col-mb-10" id="description-flex-container">
                                 <div id="cointribe-description">
-                                    <h2 class="title title-regular">Buy and sell crypto
+                                    <h2 class="title title-regular">A Crypto Exchange for Global Businesses
                                     </h2>
-                                    <p>Buy through our currency partners and receive assets directly to your
-                                        personal wallet.</p>
-                                    <a href="/login" class="purchase-now-button">Get started</a>
+                                    <p>Connecting businesses to the global financial system</p>
+                                    <a href="https://app.cointribe.io/login" class="purchase-now-button">Get started</a>
                                 </div>
                                 <div class="home-image-container">
-                                    <img class="home-page-image" src="images/phone-crypto.png" alt="phone">
+                                    <img class="home-page-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/phone-crypto.png" alt="phone">
                                     <div id="blob-container">
-                                        <img class="cryptocurrency-image" src="images/cryptocurrency.png" alt="crypto">
-                                        <img class="bitcoin-image" src="images/bitcoin1.png" alt="bitcoin">
+                                        <img class="cryptocurrency-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/cryptocurrency.png" alt="crypto">
+                                        <img class="bitcoin-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/bitcoin1.png" alt="bitcoin">
                                     </div>
                                 </div>
                             </div>
@@ -63,6 +73,7 @@
                     </div>
                 </div>
             </div>
+
             <section class="section" id="cointribe-buysell">
                 <div class="container">
                     <div class="nk-block nk-block-text-wrap">
@@ -72,7 +83,7 @@
                                 <div class="nk-block-img gfx-re-lgl py-5 py-lg-0 animated" data-animate="fadeInUp"
                                     data-delay="0.1" id="crypto-woman-div">
                                     <div class="gfx-round-bg after"></div>
-                                    <img class="crypto-woman" src="images/crypto-woman.png" alt="app">
+                                    <img class="crypto-woman" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/crypto-woman.png" alt="app">
                                 </div>
                             </div>
 
@@ -80,10 +91,10 @@
                                 <div class="nk-block-text animated" id="buy-sell-second-container"
                                     data-animate="fadeInUp" data-delay="0.2">
                                     <div class="pb-5">
-                                        <h2 class="title title-regular" id="heading">Cointribe Buysell</h2>
-                                        <p>Connecting businesses to the global financial system</p>
+                                        <h2 class="title title-regular" id="heading">Cointribe Buy/Sell</h2>
                                     </div>
-                                    <ul class="list list-check list-check-s3 list-check-s3-sm" style="list-style: none;">
+                                    <ul class="list list-check list-check-s3 list-check-s3-sm"
+                                        style="list-style: none;">
                                         <li>
                                             <h4 class="title title-md">Designed for everyone</h4>
                                             <p>Cointribe is built on the mission "Financial inclusion for all". We want
@@ -101,7 +112,7 @@
                                             </p>
                                         </li>
                                     </ul>
-                                    <a href="/login" class="purchase-now-button">Get started</a>
+                                    <a href="https://app.cointribe.io/login" class="purchase-now-button">Get started</a>
                                 </div>
 
                             </div>
@@ -109,7 +120,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section pt-0" id="cointribe-mobile-wallet">
+            <section class="section pt-0" id="cointribe-mobile-wallet" >
                 <div class="container">
                     <div class="nk-block nk-block-text-wrap">
                         <div
@@ -118,18 +129,20 @@
                                 <div class="nk-block-img gfx-re-lg animated" data-animate="fadeInUp" data-delay="0.1">
                                     <div class="gfx-round-bg after"></div>
                                     <div class="cover_image_right_div">
-                                        <img class="cover_image_right" src="images/cover2.png" alt="app">
+                                        <img class="cover_image_right" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/cover2.png" alt="app">
                                     </div>
-                                    <!-- <img class="bitcoin-image" src="images/bitcoin1.png" alt="bitcoin"> -->
+                                    <!-- <img class="bitcoin-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/bitcoin1.png" alt="bitcoin"> -->
                                 </div>
                             </div>
                             <div class="col-lg-6 col-mb-10">
-                                <div class="nk-block-text animated" data-animate="fadeInUp" data-delay="0.2" id="cointribe-mobile-resp">
+                                <div class="nk-block-text animated" data-animate="fadeInUp" data-delay="0.2"
+                                    id="cointribe-mobile-resp">
                                     <div class="pb-5">
-                                        <h2 class="title title-regular" id="heading">Cointribe Mobile Wallet</h2>
+                                        <h2 class="title title-regular" id="heading" style="padding-top: 50px;">Cointribe Wallet</h2>
                                         <p>Mobile wallet meets trading app.</p>
                                     </div>
-                                    <ul class="list list-check list-check-s3 list-check-s3-sm" style="list-style: none;">
+                                    <ul class="list list-check list-check-s3 list-check-s3-sm"
+                                        style="list-style: none;">
                                         <li>
                                             <h4 class="title title-md">All-in-one</h4>
                                             <p>Everything you need to store, buy and sell your crypto under one roof.
@@ -159,32 +172,33 @@
                                 <div class="nk-block-img gfx-re-lgl py-5 py-lg-0 animated" data-animate="fadeInUp"
                                     data-delay="0.1" id="third_cover_image_div">
                                     <div class="gfx-round-bg"></div>
-                                    <img class="cover_image" src="images/cover.png" alt="app">
+                                    <img class="cover_image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/cover.png" alt="app">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-mb-10">
                                 <div class="nk-block-text animated" data-animate="fadeInUp" data-delay="0.2"
                                     style="margin-bottom: 30px;" id="why-cointribe-div">
-                                    <div class="pb-5" >
-                                        <h2 class="title title-regular" id="heading">Why Cointribe?</h2>
+                                    <div class="pb-5">
+                                        <h2 class="title title-regular" id="heading"><b
+                                                style="color: #28986b;">Why</b> Cointribe?</h2>
                                         <p>Make life easy for your customers. Embed our platform into your store for
                                             instant digital asset payments – with zero fees or cashbacks.</p>
                                     </div>
                                     <ul class="list list-check list-check-s3 list-check-s3-sm" style="list-style: none;"
                                         id="list">
                                         <li>
-                                            <img src="images/1.png" alt="one" class="list-numbering">
+                                            <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/1.png" alt="one" class="list-numbering">
                                             <h4 class="title title-md">Automatic conversion</h4>
                                         </li>
                                         <li>
-                                            <img src="images/2.png" alt="two" class="list-numbering">
+                                            <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/2.png" alt="two" class="list-numbering">
                                             <h4 class="title title-md">Simple to manage</h4>
                                         </li>
                                         <li>
-                                            <img src="images/3.png" alt="three" class="list-numbering">
+                                            <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/3.png" alt="three" class="list-numbering">
                                             <h4 class="title title-md">Quick to set up</h4>
                                         </li>
-                                        <a href="/login" class="purchase-now-button"
+                                        <a href="https://app.cointribe.io/login" class="purchase-now-button"
                                             style="margin-top: 40px; margin-bottom: -70px;">Get started</a>
                                     </ul>
                                 </div>
@@ -194,54 +208,56 @@
                 </div>
             </section>
             <section class="section pt-0" id="know-more-row">
-                <div class="container">
-                    <div class="nk-block nk-block-feature">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 col-mb-10">
-                                <div class="section-head text-center animated" data-animate="fadeInUp" data-delay="0.1">
-                                    <h2 class="title title-regular" id="heading" style="margin-bottom: 30px;">Know more
-                                        about Cointribe</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 col-mb-10">
-                                <div class="feature feature-inline card card-s3 flex-wrap flex-sm-nowrap animated"
-                                    data-animate="fadeInUp" data-delay="0.2">
-
-                                    <div class="feature-text">
-                                        <div id="image-number">
-                                            <img src="images/agreement.png" alt="three" class="list-numbering"
-                                                style="margin-bottom: 25px;">
-                                        </div>
-                                        <div id="image-info">
-                                            <h5 class="title title-md">Compliance</h5>
-                                            <p>We believe legal compliance is key to growing digital finance.</p>
-                                            <a href="#">learn more <em class="ti ti-arrow-right ps-2"></em>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-mb-10">
-                                <div class="feature feature-inline card card-s3 flex-wrap flex-sm-nowrap animated"
-                                    data-animate="fadeInUp" data-delay="0.3">
-
-                                    <div class="feature-text">
-                                        <div id="image-number">
-                                            <img src="images/manager.png" alt="three" class="list-numbering"
-                                                style="margin-bottom: 20px;">
-                                        </div>
-                                        <div id="image-info">
-                                            <h5 class="title title-md">Funds management</h5>
-                                            <p>Learn more about how your funds are managed on cointribe</p>
-                                            <a href="#">learn more <em class="ti ti-arrow-right ps-2"></em>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <h2 style="text-align: center;">Cointribe <b style="color: #28986b;">Features</b></h2>
+                <div class="features-top-container row">
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/deposit.png" alt="about">
+                        <h3>Fast and easy deposits and withdrawals</h3>
+                        <p>Whether you want to deposit or withdraw your crypto or fiat currencies, CoinTribe helps you
+                            make quick transactions to any payment option of your choice. </p>
+                    </div>
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/security.png" alt="about">
+                        <h3>Highly Secure</h3>
+                        <p>Backed by hi-tech encryption and security, you are rest assured that your cryptocurrencies
+                            and details are safe with us. Your cryptocurrencies are stored in a deep freeze and secured
+                            with multi-factor authentication to guard against theft and hackers.</p>
+                    </div>
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/user-experience.png" alt="about">
+                        <h3>Ease Of Use</h3>
+                        <p>Our solution cuts through the noise yet is super easy to use. Cointribe delivers a
+                            user-friendly platform that’s easy to use and navigate, even for first-time users.</p>
+                    </div>
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/liquidity.png" alt="about">
+                        <h3>Deep Liquidity</h3>
+                        <p>We give you access to ocean deep and industry-leading liquidity. We offer clients high
+                            monthly limits.</p>
+                    </div>
+                </div>
+                <div class="features-bottom-container row">
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/interest-rate.png" alt="about">
+                        <h3>Industry-best Rates</h3>
+                        <p>Enjoy instant deposits at no additional cost and unbeatable rates when you withdraw crypto.
+                            We constantly monitor market prices to guarantee the best rates and ensure you save more
+                            while transacting on CoinTribe.</p>
+                    </div>
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/customer-service.png" alt="about">
+                        <h3>24/7 Support</h3>
+                        <p>Our global support department spread in different countries across the globe, is available
+                            24/7 to meet your support needs.</p>
+                    </div>
+                    <div>
+                        <img class="features-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/payment.png" alt="about">
+                        <h3>Multiple Payment Options</h3>
+                        <p>We give our clients a wide array of options to pay us. These include:</p>
+                        <ul>
+                            <li>Swift Transfer</li>
+                            <li>Single Euro Payments Area (SEPA)</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -258,7 +274,7 @@
                             <div class="get-started-div col-md-3">
                                 <div class="feature feature-center animated" data-animate="fadeInUp" data-delay="0.2">
                                     <div class="feature-serial">
-                                        <img src="images/add-user.png" alt="three" class="list-numbering">
+                                        <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/add-user.png" alt="three" class="list-numbering">
                                     </div>
                                     <div class="feature-text feature-text-wd">
                                         <h5 class="title title-md" id="sign-up">Sign up</h5>
@@ -269,7 +285,7 @@
                             <div class="get-started-div col-md-3">
                                 <div class="feature feature-center animated" data-animate="fadeInUp" data-delay="0.3">
                                     <div class="feature-serial">
-                                        <img src="images/crypto-wallet.png" alt="three" class="list-numbering">
+                                        <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/crypto-wallet.png" alt="three" class="list-numbering">
                                     </div>
                                     <div class="feature-text feature-text-wd">
                                         <h5 class="title title-md">Try your new wallet</h5>
@@ -280,7 +296,7 @@
                             <div class="get-started-div col-md-3">
                                 <div class="feature feature-center animated" data-animate="fadeInUp" data-delay="0.4">
                                     <div class="feature-serial">
-                                        <img src="images/swap.png" alt="three" class="list-numbering">
+                                        <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/swap.png" alt="three" class="list-numbering">
                                     </div>
                                     <div class="feature-text feature-text-wd">
                                         <h5 class="title title-md">Explore the ecosystem</h5>
@@ -291,41 +307,79 @@
                             </div>
                         </div>
                         <div class="text-center pt-3 animated" data-animate="fadeInUp" data-delay="0.5">
-                            <a href="/register" class="purchase-now-button" id="gsn-button">Create an account</a>
+                            <a href="https://app.cointribe.io/register" class="purchase-now-button" id="gsn-button">Create an account</a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="nk-footer bg-theme ov-h" id="footer">
-
             <div class="section section-sm pt-0 footer-bottom animated" data-animate="fadeInUp" data-delay="0.5">
-                <div class="container">
-                    <div class="row justify-content-md-between align-items-center justify-content-center flex-direction-column>
-                            <div class=" col-lg-6 col-md-3 col-sm-4"
-                        style="display: flex; flex-direction: column; margin-bottom: 15px; margin-top: -25Ppx;">
-                        <a href="./" class="wgs-logo-s2 d-inline-block mb-2 mb-md-0">
-                            <img src="images/logo.svg" alt="logo">
+                <div class="container" id="footer-main-flex-container" >
+                    <div class="row justify-content-md-between  justify-content-center flex-direction-column"
+                        style="margin-right: 30px; padding-top: 17px;">
+                        <a class="wgs-logo-s2 d-inline-block mb-2 mb-md-0">
+                            <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="col-lg-6 col-md-8">
-                        <div class="copyright-text">
-                            <ul class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
-                                <li style="list-style:none">
-                                    <a href="/tncs">Terms & Conditions</a>
-                                </li>
-                            </ul>
+                    <div class="col-lg-6 col-md-8" id="footer-right-flex-container">
+                        <div style="min-width: 150px;">
+                            <h6>Company</h6>
+                            <li><a href="<?= Url::to(["site/contact"]) ?>">Contact Us</a></li>
+                            <li><a href="<?= Url::to(["site/about"]) ?>">About Us</a></li>
                         </div>
+                        <div style="min-width: 150px;">
+                            <h6>Legal</h6>
+                            <li><a href="<?= Url::to(["site/terms-conditions"]) ?>">Terms & Conditions</a></li>
+                            <li><a href="<?= Url::to(["site/privacy-policy"]) ?>">Privacy policy</a></li>
+                            <li><a href="<?= Url::to(["site/cookie-policy"]) ?>">Cookie policy</a></li>
+                        </div>
+                        <div style="min-width: 150px;">
+                            <h6>Pricing</h6>
+                            <li><a href="<?= Url::to(["site/withdrawals"]) ?>">Deposits</a></li>
+                            <li><a href="<?= Url::to(["site/withdrawals"]) ?>">Withdrawals</a></li>
+                        </div>
+                        <div style="min-width: 150px;">
+                            <h6>Countries</h6>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/ke.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Kenya</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/ng.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Nigeria</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/za.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; South Africa</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/gh.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Ghana</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/ci.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Côte d’Ivoire</p>
+                          
+                        </div>
+						<div style="margin-left: -20px; min-width: 150px;" id="countries-lower-div">
+                            <br>
+                      
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/ml.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Mali</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/sn.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Senegal</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/tg.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Togo</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/bf.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Burkina Faso</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/cm.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Cameroon</p>
+                            <p><img src="https://flagicons.lipis.dev/flags/4x3/gn.svg" alt="" width="20px"
+                                    class="img-fluid">&ensp; Guinea Conakry</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-    </div>
-    <div class="nk-ovm shape-z7 ov-h"></div>
-    </footer>
+            <div class="copyright-text" style="background-color:#28986b;">
+                <p style="color:#fff;">© Copyright 2023 <b>Cointribe.</b> All rights reserved</p>
+            </div>
+        </footer>
     </div>
 
 
 </body>
-
 
 </html>

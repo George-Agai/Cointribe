@@ -56,36 +56,36 @@
                     <h2>Join your Tribe</h2>
                     <p>We’re a team of highly ambitious and dedicated people, who are also passionate about crypto! Join us
                         to connect businesses to a borderless and efficient global financial system.</p>
-                        <a class="purchase-now-button" href="openings.html" id="apply-now">Apply Now</a>
+                        <!--<a class="purchase-now-button" href="#" id="apply-now">Apply Now</a> -->
                 </div>
             </div>
         </section>
         <section>
             <div class="careers-second-row">
-                <h2 style="text-align: center;"><b style="color: blueviolet;">Values</b> we uphold at Cointribe</h2>
+                <h2 style="text-align: center;"><b style="color: #28986b;">Values</b> we uphold at Cointribe</h2>
                 <div class="values-flex-container">
                         <div>
-                            <img class="values-image" src="images/balance.png" alt="about">
+                            <img class="values-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/balance.png" alt="about">
                             <h3>Integrity</h3>
                             <p>We are always honest and have strong moral principles! We are always truthful and trustworthy.</p>
                         </div>
                         <div>
-                            <img class="values-image" src="images/responsibility.png" alt="about">
+                            <img class="values-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/responsibility.png" alt="about">
                             <h3>Accountability</h3>
                             <p>We always take ownership of what happens as a result of our choices and actions. The tribe is empowered to always take initiatives, and to make the right decisions.</p>
                         </div>
                         <div>
-                            <img class="values-image" src="images/satisfaction.png" alt="about">
+                            <img class="values-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/satisfaction.png" alt="about">
                             <h3>Customer Centricity</h3>
                             <p>We always strive to understand our customers’ situations, perceptions and expectations, and ensure that the expectations are not only met, but also exceeded.</p>
                         </div>
                         <div>
-                            <img class="values-image" src="images/motivation.png" alt="about">
+                            <img class="values-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/motivation.png" alt="about">
                             <h3>Teamwork</h3>
                             <p>We always collaborate with each other to achieve our goals, effectively and efficiently. </p>
                         </div>
                         <div>
-                            <img class="values-image" src="images/professionals.png" alt="about">
+                            <img class="values-image" src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/professionals.png" alt="about">
                             <h3>Professionalism</h3>
                             <p>We conduct ourselves like professionals.</p>
                         </div>
@@ -94,8 +94,8 @@
         </section>
         <section>
             <div class="careers-third-row">
-                <h2 style="text-align: center;"><b style="color: blueviolet;">Why</b> you should join the tribe</h2>
-                <ul style="list-style: none;">
+                <h2 style="text-align: center;"><b style="color: #28986b;">Why</b> you should join the tribe</h2>
+                <ul style="list-style: none;" class="careers-list">
                     <li><h3>Flexibility</h3></li>
                     <ul style="margin-top: -20px;">
                         <li><p>Work remotely, or join us in our cool Nairobi office. </p></li>
@@ -124,38 +124,41 @@
             <div class="careers-fourth-row">
                 <div class="join-the-tribe-container">
                     <h3>Join the Tribe</h3>
-                    <p>Join the Tribe, which is on a mission to make the world a better place to do business in. </p>
-                    <a class="purchase-now-button" id="open-opportunities" href="openings.html">See Open Opportunities</a>
+                    <p>Join the Tribe, which is on a mission to make the world a better place to do business in. We currently haveno open positions, please check here later. </p>
+                    <!--<a class="purchase-now-button" id="open-opportunities" href="#">Check Later for Open Oppportunities</a>-->
                 </div>
             </div>
         </section>
         <footer class="nk-footer bg-theme ov-h" id="footer">
             <div class="section section-sm pt-0 footer-bottom animated" data-animate="fadeInUp" data-delay="0.5">
-                <div class="container" id="footer-main-flex-container">
+                <div class="container" id="footer-main-flex-container" >
                     <div class="row justify-content-md-between  justify-content-center flex-direction-column"
                         style="margin-right: 30px; padding-top: 17px;">
-                        <a href="./" class="wgs-logo-s2 d-inline-block mb-2 mb-md-0">
-                            <img src="images/logo.svg" alt="logo">
+                        <a class="wgs-logo-s2 d-inline-block mb-2 mb-md-0">
+                            <img src="<?php echo Yii::getAlias('@web'); ?>/new_template/images/logo.svg" alt="logo">
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-8" id="footer-right-flex-container">
-                        <div>
+                        <div style="min-width: 150px;">
                             <h6>Company</h6>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="about.html">About Us</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            
                         </div>
-                        <div class="">
+                        <div style="min-width: 150px;">
                             <h6>Legal</h6>
                             <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                             <li><a href="privacy-policy.html">Privacy policy</a></li>
                             <li><a href="cookie-policy.html">Cookie policy</a></li>
                         </div>
-                        <div>
+                        <div style="min-width: 150px;">
                             <h6>Pricing</h6>
-                            <li><a href="/tncs">Deposits</a></li>
+                            <li><a href="withdrawals.html">Deposits</a></li>
                             <li><a href="withdrawals.html">Withdrawals</a></li>
+                            <li><a href="about.html">Products</a></li>
                         </div>
-                        <div>
+                        <div style="min-width: 150px;">
                             <h6>Countries</h6>
                             <p><img src="https://flagicons.lipis.dev/flags/4x3/ke.svg" alt="" width="20px"
                                     class="img-fluid">&ensp; Kenya</p>
@@ -167,6 +170,11 @@
                                     class="img-fluid">&ensp; Ghana</p>
                             <p><img src="https://flagicons.lipis.dev/flags/4x3/ci.svg" alt="" width="20px"
                                     class="img-fluid">&ensp; Côte d’Ivoire</p>
+                          
+                        </div>
+						<div style="margin-left: -20px; min-width: 150px;" id="countries-lower-div">
+                            <br>
+                      
                             <p><img src="https://flagicons.lipis.dev/flags/4x3/ml.svg" alt="" width="20px"
                                     class="img-fluid">&ensp; Mali</p>
                             <p><img src="https://flagicons.lipis.dev/flags/4x3/sn.svg" alt="" width="20px"
@@ -184,8 +192,8 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright-text">
-                <p>© Copyright 2023 <b>Cointribe.</b> All rights reserved</p>
+            <div class="copyright-text" style="background-color:#28986b;">
+                <p style="color:#fff;">© Copyright 2023 <b>Cointribe.</b> All rights reserved</p>
             </div>
         </footer>
     </div>

@@ -966,11 +966,14 @@ section {
 
 .careers-fourth-row{
   height: 70vh;
+  padding: 100px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("../images/crypto-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .join-the-tribe-container{
   padding: 50px;
@@ -1026,6 +1029,35 @@ section {
 
 
 @media (max-width: 1200px) {
+  .values-flex-container{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 240px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
   .login-sign-up-btn{
     margin-left: -40px;
     max-width: 90px;
@@ -1040,11 +1072,40 @@ section {
   .header a.logo {
     margin-left: -10px;
   }
-  /* .header-flex-container .navbar{
-    display: none;
-  } */
 }
 @media (max-width: 1120px) {
+  .values-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 240px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
+  .careers-third-row{
+    height: min-content;
+    padding: 40px;
+    padding-right: 150px;
+    padding-left: 100px;
+  }
   .login-sign-up-btn{
     margin-left: -40px;
     max-width: 90px;
@@ -1079,6 +1140,33 @@ section {
   }
 }
 @media (max-width: 1100px) {
+  .values-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 40px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    margin-left: -60px;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 240px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
   .login-sign-up-btn{
     margin-left: -40px;
     max-width: 90px;
@@ -1104,6 +1192,35 @@ section {
   #footer-right-flex-container{
     margin-left: 0px;
   }
+  .values-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 370px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
 }
 @media(max-width: 950px){
   #footer-right-flex-container{
@@ -1114,6 +1231,22 @@ section {
   }
 }
 @media (max-width: 800px) {
+  .empty-careers-div{
+    width: 130vw;
+  }
+  .careers-first-row{
+    height: min-content;
+    padding-bottom: 10px;
+  }
+  .careers-third-row{
+    height: min-content;
+    padding: 40px;
+    padding-right: 100px;
+    padding-left: 50px;
+  }
+  .careers-fourth-row{
+    padding: 50px;
+  }
   .login-sign-up-btn{
     margin-left: -40px;
     max-width: 70px;
@@ -1151,8 +1284,127 @@ section {
     margin-left: 20px;
   }
 }
+@media (max-width: 850px){
+  .values-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 280px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
+}
+@media (max-width: 660px){
+  .values-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 80vw;
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
+}
 
 @media (max-width: 600px) {
+  .empty-careers-div{
+    width: 80vw;
+  }
+  .right-careers-div h2{
+    font-size: 46px;
+  }
+  .right-careers-div p{
+    font-size: 17px;
+  }
+  .careers-second-row h2{
+    font-size: 34px;
+  }
+  .careers-list li h3{
+    font-size: 19px;
+  }
+  .careers-list ul li p{
+    font-size: 17px;
+  }
+  .careers-list ul lip{
+    font-size: 7px;
+  }
+
+  .careers-third-row h2{
+    font-size: 34px;
+  }
+  .values-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 80vw;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .values-flex-container div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .values-flex-container div p{
+    font-size: 16px;
+  }
+  .careers-fourth-row{
+    padding: 20px;
+  }
   #footer-main-flex-container{
     display: flex;
     flex-direction: column;
@@ -1349,6 +1601,36 @@ section {
 
 
 @media (max-width: 500px) {
+  .values-flex-container div{
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid rgb(234, 232, 232);
+    max-width: 86vw;
+    padding: 15px;
+    margin-left: -5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgb(230, 227, 227);
+  }
+  .careers-third-row{
+    height: min-content;
+    padding: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .careers-second-row h2{
+    font-size: 36px;
+  }
+  .values-flex-container div h3{
+    font-size: 24px;
+  }
+  .values-flex-container div p{
+    font-size: 15px;
+  }
+  .careers-fourth-row{
+    height: min-content;
+    padding: 10px;
+  }
   .login-sign-up-btn{
     margin-left: -40px;
     width: 50px;
@@ -1377,6 +1659,10 @@ section {
   }
 }
 @media (max-width: 470px) {
+  .careers-fourth-row{
+    height: min-content;
+    padding: 10px;
+  }
   .login-sign-up-btn{
     margin-left: -36px;
     max-width: 70px;

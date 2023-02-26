@@ -395,8 +395,8 @@ section {
   font-size: 13px;
   background-color: #28986b;
   border-color: #28986b !important;
-  width: 70px;
-  height: 38px;
+  width: 90px;
+  height: 40px;
   color: white;
   font-weight: 600;
   margin-left: -30px;
@@ -414,8 +414,8 @@ section {
   align-items: center;
   border-radius: 27px;
   font-size: 13px;
-  width: 60px;
-  height: 38px;
+  width: 100px;
+  height: 40px;
   color: #28986b;
   border: 1.3px solid #28986b;
   font-weight: 600;
@@ -1115,12 +1115,13 @@ section {
   }
   .login-sign-up-btn{
     margin-left: -40px;
-    width: 50px;
+    max-width: 70px;
     height: 38px;
   }
   .sign-up-btn{
-    width: 40px;
+    max-width: 60px;
     height: 38px;
+    margin-left: 100px;
   }
   .about-us-main-container{
     flex-direction: column;
@@ -1213,12 +1214,12 @@ section {
   .sign-up-btn{
     width: 40px;
     height: 38px;
-    margin-left: -40px;
+    margin-left: 60px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .login-sign-up-btn{
-    margin-left: -30px;
+    margin-left: -36px;
     max-width: 70px;
     height: 38px;
     overflow: hidden;
@@ -1226,7 +1227,7 @@ section {
   .sign-up-btn{
     max-width: 100px;
     height: 38px;
-    margin-left: -70px;
+    margin-left: 10px;
     border: none;
   }
   .sign-up-btn:hover{
@@ -1241,9 +1242,17 @@ section {
     text-align: center;
   }
 }
+@media (max-width: 420px) {
+  .sign-up-btn{
+    max-width: 90px;
+    height: 38px;
+    margin-left: -65px;
+    border: none;
+  }
+}
 @media (max-width: 370px) {
   .login-sign-up-btn{
-    margin-left: -30px;
+    margin-left: -36px;
     max-width: 64px;
     height: 38px;
     overflow: hidden;
@@ -1251,7 +1260,7 @@ section {
   .sign-up-btn{
     max-width: 90px;
     height: 38px;
-    margin-left: -90px;
+    margin-left: -55px;
     border: none;
   }
   .sign-up-btn:hover{

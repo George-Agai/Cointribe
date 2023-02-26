@@ -1630,6 +1630,8 @@ section {
   .careers-fourth-row{
     height: min-content;
     padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .login-sign-up-btn{
     margin-left: -40px;
@@ -1662,6 +1664,8 @@ section {
   .careers-fourth-row{
     height: min-content;
     padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .login-sign-up-btn{
     margin-left: -36px;

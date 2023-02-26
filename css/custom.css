@@ -1024,13 +1024,149 @@ section {
 }
 
 
+
+@media (max-width: 1200px) {
+  .login-sign-up-btn{
+    margin-left: -40px;
+    max-width: 90px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .sign-up-btn{
+    max-width: 90px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .header a.logo {
+    margin-left: -10px;
+  }
+  /* .header-flex-container .navbar{
+    display: none;
+  } */
+}
+@media (max-width: 1120px) {
+  .login-sign-up-btn{
+    margin-left: -40px;
+    max-width: 90px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .sign-up-btn{
+    max-width: 90px;
+    height: 40px;
+    margin-left: 250px;
+  }
+  .header a.logo {
+    margin-left: 0px;
+  }
+  .header-flex-container .navbar{
+    display: none;
+  }
+  #footer-right-flex-container div{
+    margin-bottom: -40px;
+  }
+  #footer-right-flex-container h6{
+    font-size: 17px;
+  }
+  #countries-lower-div{
+    margin-top: 150px;
+  }
+  #countries-lower-div p{
+    margin-left: -167px;
+  }
+  #footer-right-flex-container{
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1100px) {
+  .login-sign-up-btn{
+    margin-left: -40px;
+    max-width: 90px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .sign-up-btn{
+    max-width: 90px;
+    height: 40px;
+    margin-left: 250px;
+  }
+  .header a.logo {
+    margin-left: 0px;
+  }
+  .header-flex-container .navbar{
+    display: none;
+  }
+  #footer-right-flex-container{
+    margin-left: 50px;
+  }
+}
+@media (max-width: 995px){
+  #footer-right-flex-container{
+    margin-left: 0px;
+  }
+}
+@media(max-width: 950px){
+  #footer-right-flex-container{
+    gap: 10px;
+  }
+  #countries-lower-div p{
+    margin-left: -147px;
+  }
+}
+@media (max-width: 800px) {
+  .login-sign-up-btn{
+    margin-left: -40px;
+    max-width: 70px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .sign-up-btn{
+    max-width: 90px;
+    height: 40px;
+    margin-left: 100px;
+  }
+  .header a.logo {
+    margin-left: -40px;
+  }
+  .header-flex-container .navbar{
+    display: none;
+  }
+  #footer-main-flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+  #footer-right-flex-container{
+    flex-direction: column;
+  }
+  #footer-right-flex-container div{
+    margin-bottom: -40px;
+  }
+  #footer-right-flex-container h6{
+    font-size: 17px;
+  }
+  #countries-lower-div{
+    margin-top: -30px;
+  }
+  #countries-lower-div p{
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 600px) {
+  #countries-lower-div{
+    padding-top: 10px;
+  }
+  #countries-lower-div p{
+    margin-left: 0px;
+  }
   .section-head #heading {
     font-size: 30px;
     text-align: left;
     margin-left: 15px;
   }
-
+  .header a.logo {
+    margin-left: 0px;
+  }
   .row .feature {
     padding: 10px;
     margin-bottom: 15px;
@@ -1121,7 +1257,7 @@ section {
   .sign-up-btn{
     max-width: 60px;
     height: 38px;
-    margin-left: 100px;
+    margin-left: 130px;
   }
   .about-us-main-container{
     flex-direction: column;
@@ -1227,7 +1363,7 @@ section {
   .sign-up-btn{
     max-width: 100px;
     height: 38px;
-    margin-left: 10px;
+    margin-left: 35px;
     border: none;
   }
   .sign-up-btn:hover{
@@ -1241,16 +1377,19 @@ section {
     font-size: 30px; 
     text-align: center;
   }
+  .header a.logo{
+    margin-left: -25px;
+  }
 }
 @media (max-width: 420px) {
   .sign-up-btn{
     max-width: 90px;
     height: 38px;
-    margin-left: -65px;
+    margin-left: -15px;
     border: none;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 390px) {
   .login-sign-up-btn{
     margin-left: -36px;
     max-width: 64px;
@@ -1260,7 +1399,7 @@ section {
   .sign-up-btn{
     max-width: 90px;
     height: 38px;
-    margin-left: -55px;
+    margin-left: -35px;
     border: none;
   }
   .sign-up-btn:hover{
@@ -1271,3 +1410,13 @@ section {
     margin-left: -40px;
   }
 }
+@media (max-width: 360px) {
+  .sign-up-btn{
+    max-width: 90px;
+    height: 38px;
+    margin-left: -85px;
+    border: none;
+  }
+}
+
+

@@ -1029,6 +1029,9 @@ section {
 
 
 @media (max-width: 1200px) {
+  #footer-main-flex-container{
+    margin-left: -10px;
+  }
   .values-flex-container{
     display: flex;
     padding-left: 10px;
@@ -1139,6 +1142,7 @@ section {
     margin-left: 70px;
   }
 }
+
 @media (max-width: 1100px) {
   .values-flex-container{
     display: flex;
@@ -1230,7 +1234,7 @@ section {
     margin-left: -147px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .empty-careers-div{
     width: 130vw;
   }

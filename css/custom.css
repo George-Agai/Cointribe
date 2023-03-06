@@ -131,7 +131,7 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #3b77b7;
+  color: #307b5d;
 }
 
 .navbar li a {
@@ -332,7 +332,7 @@ section {
 #cointribe-description {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 55%;
   padding-left: 80px;
   padding-right: 150px;
   text-align: left;
@@ -349,7 +349,7 @@ section {
 
   .home-image-container #blob-container {
     margin-left: -50px;
-    margin-top: -50px;
+    margin-top: -60px;
   }
 
   #cointribe-description .title {
@@ -376,9 +376,8 @@ section {
 }
 
 #cointribe-description p {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
-  font-weight: 500;
 }
 
 #home-page-row-container {
@@ -425,7 +424,7 @@ section {
   border: 1.8px solid #28986b;
   box-shadow: 1px 1px 6px 0 rgb(213, 209, 209);
   transition: 0.2s;
-  color: #28986b; 
+  color: #307b5d; 
 }
 
 .purchase-now-button {
@@ -445,7 +444,7 @@ section {
 
 .purchase-now-button:hover {
   box-shadow: 2px 2px 6px 0 rgb(177, 174, 174);
-  background-color: #3b77b7;
+  background-color: #307b5d;
   transition: 0.2s;
   color: white;
 }
@@ -473,8 +472,8 @@ section {
 
 
 .cryptocurrency-image {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 150px;
   margin-left: -80px;
 }
@@ -583,6 +582,7 @@ section {
 #list li {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 #buy-sell-second-container h4 {
@@ -595,9 +595,10 @@ section {
 }
 
 .list-numbering {
-  width: 60px;
-  height: 60px;
-  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  
 }
 
 #heading {
@@ -687,14 +688,14 @@ section {
 .features-top-container div, .features-bottom-container div{
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 25px;
   width: 300px;
   height: 370px;
   margin-bottom: 40px;
   border-radius: 10px;
   background-color: white;
   border: 1px solid rgb(234, 231, 231);
-  box-shadow: 0 2px 16px 0 rgb(220, 214, 214);
+  box-shadow: 0 2px 16px 0 rgb(231, 229, 229);
 }
 .features-top-container h3, .features-bottom-container h3{
   margin-bottom: 10px;
@@ -706,9 +707,9 @@ section {
   margin-bottom: 15px;
 }
 .features-top-container div:hover, .features-bottom-container div:hover{
-  border: 1px solid #b2a7a7;
-  transform: scale(1.1);
-  transition: 0.6s;
+  border: 1px solid #cfcbcb;
+  box-shadow: 0 5px 20px 0 rgb(195, 190, 190);
+  transition: 0.5s;
 }
 #know-more-row h2{
   font-size: 45px;
@@ -841,7 +842,11 @@ section {
   background-color: white;
   margin-bottom: 15px;
   border-radius: 5px;
-  box-shadow: 0 2px 8px 0 rgb(212, 209, 209);
+  box-shadow: 0 10px 15px 0 rgb(222, 218, 218);
+}
+.products-div:hover{
+  transition: 0.5s;
+  box-shadow: 0 10px 20px 0 rgb(188, 184, 184);
 }
 .products-image{
   width: 50px;
@@ -1439,7 +1444,7 @@ section {
   }
 
   #why-cointribe-div p {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   #why-cointribe-div .list li {
@@ -1486,7 +1491,7 @@ section {
     border-radius: 10px;
     background-color: white;
     border: 1px solid rgb(234, 231, 231);
-    box-shadow: 0 2px 16px 0 rgb(220, 214, 214);
+    box-shadow: 0 2px 16px 0 rgb(243, 242, 242);
   }
   .features-top-container{
     margin-bottom: 20px;
